@@ -7,6 +7,7 @@ import WateringCan from "../Assets/products/wateringCan.jpg";
 import Baguette from "../Assets/products/baguette.webp";
 import SleepingBag from "../Assets/products/sleepingBag.jpg";
 import Airstick from "../Assets/products/airstick.webp";
+import Products from "./Products";
 
 function Shop() {
   const products = [
@@ -24,6 +25,17 @@ function Shop() {
   return (
     <main>
       <h1>Products</h1>
+      <div className="productsContainer">
+        {products.map((product) => {
+          return (
+            <Products
+              key={product.id}
+              image={product.image}
+              name={product.name}
+            />
+          );
+        })}
+      </div>
     </main>
   );
 }
