@@ -11,15 +11,60 @@ import Products from "./Products";
 
 function Shop() {
   const products = [
-    { name: "SunShaders", image: Shades, id: 1 },
-    { name: "Uncomfortable Rain Boots", image: Boots, id: 2 },
-    { name: "Shopper Stopper", image: Stopper, id: 3 },
-    { name: "Shoe Umbrella", image: Umbrella, id: 4 },
-    { name: "USB pet rock", image: Rock, id: 5 },
-    { name: "Watering Can ", image: WateringCan, id: 6 },
-    { name: "The Baguette Pack", image: Baguette, id: 7 },
-    { name: "Walking Sleeping Bag", image: SleepingBag, id: 8 },
-    { name: "Airstick", image: Airstick, id: 9 },
+    { 
+      name: "SunShaders", 
+      image: Shades, id: 1, 
+      route: "/shop/sun-shaders", 
+      price: 12.99 },
+    {
+      name: "Uncomfortable Rain Boots",
+      image: Boots,
+      id: 2,
+      route: "/shop/uncomfortable-rain-boots",
+      price: 18.99,
+    },
+    {
+      name: "Shopper Stopper",
+      image: Stopper,
+      id: 3,
+      route: "/shop/shopper-stopper",
+      price: 9.99,
+    },
+    {
+      name: "Shoe Umbrella",
+      image: Umbrella,
+      id: 4,
+      route: "/shop/shoe-umbrella",
+      price: 21.99,
+    },
+    { name: "USB pet rock", image: Rock, id: 5, route: "/shop/usb-pret-rock", price:  },
+    {
+      name: "Watering Can ",
+      image: WateringCan,
+      id: 6,
+      route: "/shop/watering-can",
+      price: 13.49,
+    },
+    {
+      name: "The Baguette Pack",
+      image: Baguette,
+      id: 7,
+      route: "/shop/the-baguette-pack",
+      price: 9.99,
+    },
+    {
+      name: "Walking Sleeping Bag",
+      image: SleepingBag,
+      id: 8,
+      route: "/shop/walking-sleeping-bag",
+      price: 24.99,
+    },
+    { 
+      name: "Airstick", 
+      image: Airstick, id: 9, 
+      route: "/shop/airstick", 
+      price: 11.99 
+    },
   ];
 
   return (
