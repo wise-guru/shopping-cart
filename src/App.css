@@ -1,4 +1,4 @@
-body {
+body, h1 {
   margin: 0;
   padding: 0;
 }
@@ -21,19 +21,20 @@ header {
   
 }
 
-/* header li {
-  list-style-type: none;
-  display: grid;
-  grid-auto-flow: column;
-  padding: 0px 20px;
-} */
+.homepage {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+
 
 header li {
   list-style-type: none;
   display: inline-block;
   padding: 0px 20px;
 }
-
 
 header a {
   text-decoration: none;
@@ -44,9 +45,8 @@ nav a:hover {
   color: rgba(0, 136, 169, 1);
 }
 
-header button {
+button {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
   color: white;
   border-radius: 50px;
   border: none;
@@ -54,7 +54,34 @@ header button {
   transition: all 0.3s ease 0s;
 }
 
+header button {
+  background-color: rgba(0, 136, 169, 1);
+}
+
 header button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
+
+/*Homepage style */
+
+.homepage img {
+  height: auto;
+  width: 50rem;
+  justify-items: end;
+  
+}
+
+.homepage button {
+  color: black;
+  border: 2px solid black;
+  
+}
+
+.homepage button:hover {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid white;
+}
+
+/*Products */
 
