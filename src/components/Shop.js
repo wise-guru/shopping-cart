@@ -11,11 +11,13 @@ import Products from "./Products";
 
 function Shop() {
   const products = [
-    { 
-      name: "SunShaders", 
-      image: Shades, id: 1, 
-      route: "/shop/sun-shaders", 
-      price: 12.99 },
+    {
+      name: "SunShaders",
+      image: Shades,
+      id: 1,
+      route: "/shop/sun-shaders",
+      price: 12.99,
+    },
     {
       name: "Uncomfortable Rain Boots",
       image: Boots,
@@ -37,7 +39,13 @@ function Shop() {
       route: "/shop/shoe-umbrella",
       price: 21.99,
     },
-    { name: "USB pet rock", image: Rock, id: 5, route: "/shop/usb-pret-rock", price:  },
+    {
+      name: "USB pet rock",
+      image: Rock,
+      id: 5,
+      route: "/shop/usb-pret-rock",
+      price: 8.99,
+    },
     {
       name: "Watering Can ",
       image: WateringCan,
@@ -59,11 +67,12 @@ function Shop() {
       route: "/shop/walking-sleeping-bag",
       price: 24.99,
     },
-    { 
-      name: "Airstick", 
-      image: Airstick, id: 9, 
-      route: "/shop/airstick", 
-      price: 11.99 
+    {
+      name: "Airstick",
+      image: Airstick,
+      id: 9,
+      route: "/shop/airstick",
+      price: 11.99,
     },
   ];
 
@@ -77,6 +86,8 @@ function Shop() {
               key={product.id}
               image={product.image}
               name={product.name}
+              route={product.route}
+              price={product.price}
             />
           );
         })}
