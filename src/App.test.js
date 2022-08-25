@@ -48,7 +48,7 @@ describe("Navigation Component", () => {
   it("renders About page", () => {
     render(<About />);
 
-    expect(screen.getByRole("heading").textContent).toMatch(/About/i);
+    expect(screen.getByRole("heading").textContent).toMatch(/About Us/i);
   });
 
   it("renders Contact page", () => {
@@ -63,3 +63,11 @@ describe("Navigation Component", () => {
     expect(screen.getByRole("heading").textContent).toMatch(/Cart/i);
   });
 });
+
+// describe("Shop Component", () => {
+//   it("renders products for", () => {
+//     render (<Shop />);
+
+//     expect(screen.getByRole("heading").textContent).toMatch()
+//   })
+// })
