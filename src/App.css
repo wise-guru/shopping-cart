@@ -30,7 +30,6 @@ header {
 }
 
 
-
 header li {
   list-style-type: none;
   display: inline-block;
@@ -85,6 +84,36 @@ header button:hover {
 }
 
 /*Products */
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+
+
+
+}
+
+.productsContainer img {
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.product {
+  display: grid;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  justify-content: center;
+}
+
+.product a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+}
 
 /*About */
 
