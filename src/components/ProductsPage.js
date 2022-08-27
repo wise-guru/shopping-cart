@@ -13,7 +13,6 @@ function ProductsPage(props) {
     <div>
       {Catalog.filter((product) => product.id.includes(props)).map(
         (filteredProduct) => {
-          console.log(props);
           return <div>{filteredProduct.name}</div>;
         }
       )}
