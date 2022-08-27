@@ -1,7 +1,6 @@
 import Catalog from "./Catalog";
 
 function ProductsPage(props) {
-  console.log(this.props.location);
   return (
     // <div>
     //   {Catalog.filter(
@@ -12,11 +11,12 @@ function ProductsPage(props) {
     // </div>
 
     <div>
-      {Catalog.filter((product) =>
-        product.route.includes(this.props.location)
-      ).map((filteredProduct) => {
-        <div>{filteredProduct.name}</div>;
-      })}
+      {Catalog.filter((product) => product.id.includes(props)).map(
+        (filteredProduct) => {
+          console.log(props);
+          return <div>{filteredProduct.name}</div>;
+        }
+      )}
     </div>
   );
 }
