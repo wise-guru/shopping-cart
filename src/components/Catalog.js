@@ -15,6 +15,7 @@ const Catalog = [
     id: 0,
     route: "/shop/sun-shaders",
     price: 12.99,
+    inCart: 0,
   },
   {
     name: "Uncomfortable Rain Boots",
@@ -22,6 +23,7 @@ const Catalog = [
     id: 1,
     route: "/shop/uncomfortable-rain-boots",
     price: 18.99,
+    inCart: 0,
   },
   {
     name: "Shopper Stopper",
@@ -29,6 +31,7 @@ const Catalog = [
     id: 2,
     route: "/shop/shopper-stopper",
     price: 9.99,
+    inCart: 0,
   },
   {
     name: "Shoe Umbrella",
@@ -36,6 +39,7 @@ const Catalog = [
     id: 3,
     route: "/shop/shoe-umbrella",
     price: 21.99,
+    inCart: 0,
   },
   {
     name: "Walking Sleeping Bag",
@@ -43,6 +47,7 @@ const Catalog = [
     id: 4,
     route: "/shop/walking-sleeping-bag",
     price: 24.99,
+    inCart: 0,
   },
 
   {
@@ -51,6 +56,7 @@ const Catalog = [
     id: 5,
     route: "/shop/the-baguette-pack",
     price: 9.99,
+    inCart: 0,
   },
 
   {
@@ -59,6 +65,7 @@ const Catalog = [
     id: 6,
     route: "/shop/watering-can",
     price: 13.49,
+    inCart: 0,
   },
   {
     name: "Airstick",
@@ -66,13 +73,15 @@ const Catalog = [
     id: 7,
     route: "/shop/airstick",
     price: 11.99,
+    inCart: 0,
   },
   {
     name: "USB pet rock",
     image: Rock,
     id: 8,
-    route: "/shop/usb-pret-rock",
+    route: "/shop/usb-pet-rock",
     price: 8.99,
+    inCart: 0,
   },
 ];
 
