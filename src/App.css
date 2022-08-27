@@ -3,6 +3,9 @@ body, h1 {
   padding: 0;
 }
 
+.container {
+  height: 100vh;
+}
 
 .App {
   text-align: center;
@@ -54,12 +57,19 @@ button {
   transition: all 0.3s ease 0s;
 }
 
-header button {
+header button, .productInfo button {
   background-color: rgba(0, 136, 169, 1);
 }
 
 header button:hover {
   background-color: rgba(0, 136, 169, 0.8);
+}
+
+.navCart {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 2px;
 }
 
 /*Homepage style */
@@ -113,6 +123,25 @@ header button:hover {
   text-decoration: none;
   list-style-type: none;
   color: #000;
+}
+
+
+/*Individual product pages 8 */
+.productPage {
+  display: grid;
+  justify-content: center;
+  background-color: #000;
+  
+}
+
+.productInfo {
+  display: grid;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr;
+}
+
+.productPage .left {
+  grid-column: 1;
 }
 
 /*About */
