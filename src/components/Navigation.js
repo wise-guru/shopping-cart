@@ -1,4 +1,5 @@
-import Cart from "../Assets/cart.png";
+import CartImage from "../Assets/cart.png";
+import Cart from "./Cart";
 
 function Navigation() {
   return (
@@ -23,8 +24,9 @@ function Navigation() {
             </a>
           </li>
           <li>
-            <a href="./cart">
-              <img src={Cart} alt="shopping cart icon" />
+            <a href="/checkout" className="navCart">
+              <img src={CartImage} alt="shopping cart icon" />
+              <div>{Cart.totalQuantity}</div>
             </a>
           </li>
         </ul>
