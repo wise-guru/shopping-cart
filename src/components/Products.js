@@ -1,22 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Products(props) {
+  const { addProduct, product, openModal, item } = props;
   return (
-    <div className="product" data-id={props.id}>
-      <a href={props.route}>
+    <div className="product" data-id={product.id}>
+      <Link to={product.route}>
         <img
           className="productImage"
-          src={props.image}
-          alt={props.name}
-          data-id={props.id}
+          src={product.image}
+          alt={product.name}
+          data-id={product.id}
+          onClick={() => {
+            RouteSwitch(item);
+            console.log(item);
+          }}
         />
-        <div className="productName" data-id={props.id}>
-          {props.name}
+        <div
+          className="productName"
+          data-id={product.id}
+          onClick={() => {
+            openModal(true);
+          }}
+        >
+          {product.name}
         </div>
-        <div className="productPrice" data-id={props.id}>
-          {props.price}
+
+        <div className="productPrice" data-id={product.id}>
+          ${product.price}
         </div>
-      </a>
+      </Link>
+      <button type="button" onClick={() => addProduct(product)}>
+        Add to cart
+      </button>
     </div>
   );
 }
