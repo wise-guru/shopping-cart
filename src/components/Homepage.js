@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import Hoodie from "../Assets/hoodie.jpg";
 
 function Homepage() {
   return (
     <main className="homepage">
-      <div>
+      <div className="homepageLeft">
         <h1>Unnecessary Products</h1>
         <div>
-          View our catalog for the most pointless innovations you will have the
-          privilege of viewing.
+          Check out our catalog for the most pointless innovations you will ever
+          have the privilege of viewing.
         </div>
-        <a href="/shop">
+        <Link to="/shop">
           <button type="button">Shop Now</button>
-        </a>
+        </Link>
         <div />
       </div>
 
