@@ -13,7 +13,7 @@ function Airstick(props) {
           <img src={products[7].image} alt={products[7].name} />
         </div>
         <div className="right">
-          <h7 className="name">{products[7].name}</h7>
+          <h1 className="name">{products[7].name}</h1>
           <div className="price">${products[7].price}</div>
           <p className="description">
             Forever losing your Apple Airpods? Or simply worried that you might
