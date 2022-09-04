@@ -1,18 +1,22 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import products from "../Catalog";
 
-function SunShaders() {
+function SunShaders(props) {
+  const { addProduct, removeProduct } = props;
+  console.log(window.location.pathname);
   return (
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <a href="/shop">Shop</a> {">"} {products[0].name}
+          <Link to="/shop">Shop</Link> {">"} {products[0].name}
         </div>
-        <div className="left">
+        <div className="left pImage">
           <img src={products[0].image} alt={products[0].name} />
         </div>
         <div className="right">
           <h1 className="name">{products[0].name}</h1>
-          <div className="price">{products[0].price}</div>
+          <div className="price">${products[0].price}</div>
           <p className="description">
             Are your usual sunglasses letting in too much light or not giving
             you quite enough privacy? Are you looking to start a new fashion
@@ -25,8 +29,9 @@ function SunShaders() {
             block out haters - wear them up, down, or closed with your favourite
             pair of sunglasses.
           </p>
-          <p>{products[0].name}</p>
-          <button type="button">Add to cart</button>
+          <button type="button" onClick={() => addProduct(products[0])}>
+            Add to cart
+          </button>
         </div>
       </div>
     </div>
