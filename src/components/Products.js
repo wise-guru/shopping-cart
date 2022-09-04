@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Products(props) {
-  const { addProduct, product, openModal, item } = props;
+  const { addProduct, product } = props;
   return (
     <div className="product" data-id={product.id}>
       <Link to={product.route}>
@@ -11,18 +11,8 @@ function Products(props) {
           src={product.image}
           alt={product.name}
           data-id={product.id}
-          onClick={() => {
-            RouteSwitch(item);
-            console.log(item);
-          }}
         />
-        <div
-          className="productName"
-          data-id={product.id}
-          onClick={() => {
-            openModal(true);
-          }}
-        >
+        <div className="productName" data-id={product.id}>
           {product.name}
         </div>
 
