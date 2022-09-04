@@ -28,10 +28,10 @@ function RouteSwitch(props) {
   } = props;
   return (
     <Routes>
-      <Route path="/" element={<Homepage />} />
+      <Route path="/shopping-cart/home" element={<Homepage />} />
       <Route path="/about" element={<About />} />
       <Route
-        path="/shop/sun-shaders"
+        path="/shopping-cart/shop/sun-shaders"
         element={
           <SunShaders
             addProduct={addProduct}
@@ -41,14 +41,14 @@ function RouteSwitch(props) {
         }
       />
       <Route
-        path="/shop/uncomfortable-rain-boots"
+        path="/shopping-cart/shop/uncomfortable-rain-boots"
         element={
           <Boots addProduct={addProduct} removeProduct={removeProduct} />
         }
       />
 
       <Route
-        path="/shop/shopper-stopper"
+        path="/shopping-cart/shop/shopper-stopper"
         element={
           <ShopperStopper
             addProduct={addProduct}
@@ -57,7 +57,7 @@ function RouteSwitch(props) {
         }
       />
       <Route
-        path="/shop/shoe-umbrella"
+        path="/shopping-cart/shop/shoe-umbrella"
         element={
           <ShoeUmbrellas
             addProduct={addProduct}
@@ -66,41 +66,41 @@ function RouteSwitch(props) {
         }
       />
       <Route
-        path="/shop/walking-sleeping-bag"
+        path="/shopping-cart/shop/walking-sleeping-bag"
         element={
           <SleepingBag addProduct={addProduct} removeProduct={removeProduct} />
         }
       />
       <Route
-        path="/shop/the-baguette-pack"
+        path="/shopping-cart/shop/the-baguette-pack"
         element={
           <Baguette addProduct={addProduct} removeProduct={removeProduct} />
         }
       />
       <Route
-        path="/shop/watering-can"
+        path="/shopping-cart/shop/watering-can"
         element={
           <WateringCan addProduct={addProduct} removeProduct={removeProduct} />
         }
       />
       <Route
-        path="/shop/airstick"
+        path="/shopping-cart/shop/airstick"
         element={
           <Airstick addProduct={addProduct} removeProduct={removeProduct} />
         }
       />
       <Route
-        path="/shop/usb-pet-rock"
+        path="/shopping-cart/shop/usb-pet-rock"
         element={<Rock addProduct={addProduct} removeProduct={removeProduct} />}
       />
       <Route
         exact
-        path="/shop/"
+        path="/shopping-cart/shop/"
         element={<Shop addProduct={addProduct} products={products} />}
       />
       <Route path="/contact" element={<Contact />} />
       <Route
-        path="/checkout"
+        path="/shopping-cart/checkout"
         element={
           <Checkout
             removeProduct={removeProduct}
@@ -111,7 +111,7 @@ function RouteSwitch(props) {
           />
         }
       />
-      <Route path="/order-complete" element={<CompleteOrder />} />
+      <Route path="/shopping-cart/order-complete" element={<CompleteOrder />} />
     </Routes>
   );
 }

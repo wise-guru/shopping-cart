@@ -7,7 +7,7 @@ function SunShaders(props) {
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <Link to="/shop">Shop</Link> {">"} {products[0].name}
+          <Link to="/shopping-cart/shop">Shop</Link> {">"} {products[0].name}
         </div>
         <div className="left pImage">
           <img src={products[0].image} alt={products[0].name} />

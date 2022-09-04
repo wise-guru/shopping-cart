@@ -57,7 +57,7 @@ function Checkout(props) {
                 Total: <strong>${totalPrice}</strong>
               </div>
             </div>
-            <Link to="/order-complete">
+            <Link to="/shopping-cart/order-complete">
               <button
                 type="button"
                 onClick={() => {
@@ -72,7 +72,7 @@ function Checkout(props) {
       ) : (
         <div className="emptyCart">
           <h1>Your cart is empty!</h1>
-          <Link to="/shop">
+          <Link to="/shopping-cart/shop">
             <button type="button">Shop Now</button>
           </Link>
         </div>

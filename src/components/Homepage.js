@@ -10,14 +10,14 @@ function Homepage() {
           Check out our catalog for the most pointless innovations you will ever
           have the privilege of viewing.
         </div>
-        <Link to="/shop">
+        <Link to="/shopping-cart/shop">
           <button type="button">Shop Now</button>
         </Link>
         <div />
       </div>
 
       <div>
-        <img src={Hoodie} alt="umbrella shoes" />
+        <img src={Hoodie} alt="Privacy Hoodie" />
       </div>
     </main>
   );

@@ -7,26 +7,26 @@ function Navigation(props) {
   return (
     <header>
       <div>
-        <Link to="/">Useless Inventions</Link>
+        <Link to="/shopping-cart/home">Useless Inventions</Link>
       </div>
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/shopping-cart/home">Home</Link>
           </li>
           <li>
-            <Link to="/shop">Shop</Link>
+            <Link to="/shopping-cart/shop">Shop</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/shopping-cart/about">About</Link>
           </li>
           <li>
-            <Link to="/contact">
+            <Link to="/shopping-cart/contact">
               <button type="button">Contact Us</button>
             </Link>
           </li>
           <li>
-            <Link to="/checkout" className="navCart">
+            <Link to="/shopping-cart/checkout" className="navCart">
               <img src={CartImage} alt="shopping cart icon" />
               <div>{cartQuantity}</div>
             </Link>
