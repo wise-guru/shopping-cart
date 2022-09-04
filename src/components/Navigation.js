@@ -7,12 +7,12 @@ function Navigation(props) {
   return (
     <header>
       <div>
-        <Link to="/shopping-cart/home">Useless Inventions</Link>
+        <Link to="/shopping-cart/">Useless Inventions</Link>
       </div>
       <nav>
         <ul>
           <li>
-            <Link to="/shopping-cart/home">Home</Link>
+            <Link to="/shopping-cart/">Home</Link>
           </li>
           <li>
             <Link to="/shopping-cart/shop">Shop</Link>

@@ -5,7 +5,7 @@ function CompleteOrder() {
     <div className="completeOrder">
       <h1>Your order has been completed!</h1>
       <div className="buttons">
-        <Link to="/shopping-cart/home">
+        <Link to="/shopping-cart/">
           <button type="button" className="homeBtn">
             Go Back Home
           </button>

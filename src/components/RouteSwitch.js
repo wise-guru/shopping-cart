@@ -28,7 +28,7 @@ function RouteSwitch(props) {
   } = props;
   return (
     <Routes>
-      <Route path="/shopping-cart/home" element={<Homepage />} />
+      <Route path="/shopping-cart/" element={<Homepage />} />
       <Route path="/about" element={<About />} />
       <Route
         path="/shopping-cart/shop/sun-shaders"
