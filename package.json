@@ -1,7 +1,7 @@
 {
   "name": "shopping-cart",
   "version": "0.1.0",
-  "homepage": "https://wise-guru.github.io/shopping-cart",
+  "homepage": "https://wise-guru.github.io/shopping-cart/home",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
