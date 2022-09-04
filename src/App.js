@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
-// import x from "uniqid";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Catalog from "./components/Catalog";
 import Navigation from "./components/Navigation";
