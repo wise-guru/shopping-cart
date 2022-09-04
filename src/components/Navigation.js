@@ -1,33 +1,35 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import CartImage from "../Assets/cart.png";
-import Cart from "./Cart";
 
-function Navigation() {
+function Navigation(props) {
+  const { cartQuantity } = props;
   return (
     <header>
       <div>
-        <a href="/">Useless Inventions</a>
+        <Link to="/">Useless Inventions</Link>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/shop">Shop</a>
+            <Link to="/shop">Shop</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/contact">
+            <Link to="/contact">
               <button type="button">Contact Us</button>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/checkout" className="navCart">
+            <Link to="/checkout" className="navCart">
               <img src={CartImage} alt="shopping cart icon" />
-              <div>{Cart.totalQuantity}</div>
-            </a>
+              <div>{cartQuantity}</div>
+            </Link>
           </li>
         </ul>
       </nav>
