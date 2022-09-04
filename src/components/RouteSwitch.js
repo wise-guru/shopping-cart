@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Homepage from "./Homepage";
 import Shop from "./Shop";
 import About from "./About";
@@ -13,35 +13,106 @@ import Airstick from "./ProductsPages/Airstick";
 import Rock from "./ProductsPages/Rock";
 import Boots from "./ProductsPages/Boots";
 import Checkout from "./Checkout";
+import CompleteOrder from "./CompleteOrder";
 
-function RouteSwitch() {
+function RouteSwitch(props) {
+  const {
+    cartItems,
+    products,
+    addProduct,
+    removeProduct,
+    item,
+    totalItems,
+    setCartItems,
+    // resetCart,
+  } = props;
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/about" element={<About />} />
+      <Route
+        path="/shop/sun-shaders"
+        element={
+          <SunShaders
+            addProduct={addProduct}
+            removeProduct={removeProduct}
+            item={item}
+          />
+        }
+      />
+      <Route
+        path="/shop/uncomfortable-rain-boots"
+        element={
+          <Boots addProduct={addProduct} removeProduct={removeProduct} />
+        }
+      />
 
-        {/* <Route
-          path=":route"
-          render={(routeProps) => (
-            <ProductsPage route={routeProps.match.params.route} />
-          )}
-        /> */}
-        <Route path="/shop/sun-shaders" element={<SunShaders />} />
-        <Route path="/shop/uncomfortable-rain-boots" element={<Boots />} />
-        <Route path="/shop/shopper-stopper" element={<ShopperStopper />} />
-        <Route path="/shop/shoe-umbrella" element={<ShoeUmbrellas />} />
-        <Route path="/shop/walking-sleeping-bag" element={<SleepingBag />} />
-        <Route path="/shop/the-baguette-pack" element={<Baguette />} />
-        <Route path="/shop/watering-can" element={<WateringCan />} />
-        <Route path="/shop/airstick" element={<Airstick />} />
-        <Route path="/shop/usb-pet-rock" element={<Rock />} />
-
-        <Route exact path="/shop/" element={<Shop />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/checkout" element={<Checkout />} />
-      </Routes>
-    </BrowserRouter>
+      <Route
+        path="/shop/shopper-stopper"
+        element={
+          <ShopperStopper
+            addProduct={addProduct}
+            removeProduct={removeProduct}
+          />
+        }
+      />
+      <Route
+        path="/shop/shoe-umbrella"
+        element={
+          <ShoeUmbrellas
+            addProduct={addProduct}
+            removeProduct={removeProduct}
+          />
+        }
+      />
+      <Route
+        path="/shop/walking-sleeping-bag"
+        element={
+          <SleepingBag addProduct={addProduct} removeProduct={removeProduct} />
+        }
+      />
+      <Route
+        path="/shop/the-baguette-pack"
+        element={
+          <Baguette addProduct={addProduct} removeProduct={removeProduct} />
+        }
+      />
+      <Route
+        path="/shop/watering-can"
+        element={
+          <WateringCan addProduct={addProduct} removeProduct={removeProduct} />
+        }
+      />
+      <Route
+        path="/shop/airstick"
+        element={
+          <Airstick addProduct={addProduct} removeProduct={removeProduct} />
+        }
+      />
+      <Route
+        path="/shop/usb-pet-rock"
+        element={<Rock addProduct={addProduct} removeProduct={removeProduct} />}
+      />
+      <Route
+        exact
+        path="/shop/"
+        element={<Shop addProduct={addProduct} products={products} />}
+      />
+      <Route path="/contact" element={<Contact />} />
+      <Route
+        path="/checkout"
+        element={
+          <Checkout
+            removeProduct={removeProduct}
+            cartItems={cartItems}
+            addProduct={addProduct}
+            totalItems={totalItems}
+            setCartItems={setCartItems}
+          />
+        }
+      />
+      <Route path="/order-complete" element={<CompleteOrder />} />
+    </Routes>
   );
 }
 
