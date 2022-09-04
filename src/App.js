@@ -36,8 +36,6 @@ function App() {
     }
   };
 
-  // const resetCartItems = this.state.push
-
   return (
     <BrowserRouter>
       <div className="container">
