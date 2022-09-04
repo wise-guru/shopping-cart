@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Catalog from "./components/Catalog";
@@ -6,6 +6,10 @@ import Navigation from "./components/Navigation";
 import RouteSwitch from "./components/RouteSwitch";
 
 function App() {
+  useEffect(() => {
+    document.title = "Useless Inventions";
+  });
+
   const [cartItems, setCartItems] = useState([]);
   const products = Catalog;
   const totalItems = cartItems.reduce((a, c) => a + c.qty, 0);
