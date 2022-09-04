@@ -1,13 +1,13 @@
 body {
   height: 100vh;
   background-color: #DEE1E6;
+  font-family: sans-serif;
 }
 
-body, h1 {
+body, h1, h2, h3 {
   margin: 0;
   padding: 0;
 }
-
 
 
 .container {
@@ -31,11 +31,6 @@ header, footer {
   padding: 30px 5%;
   
 }
-
-/* header, footer {
-  display: flex;
-  justify-content: space-between;
-} */
 
 .homepage {
   color: white;
@@ -65,7 +60,7 @@ header button,
 .product button, 
 .homepage button, 
 .emptyCart button, 
-.checkoutRight button  {
+.checkoutRight button, .completeOrder button  {
   padding: 9px 25px;
   color: white;
   border-radius: 50px;
@@ -74,7 +69,10 @@ header button,
   transition: all 0.3s ease 0s;
 }
 
-header button, .productInfo button, .product button, .emptyCart button {
+header button, 
+.productInfo button, 
+.product button, 
+.emptyCart button {
   background-color: rgba(0, 136, 169, 1);
 }
 
@@ -90,6 +88,16 @@ header button:hover, .emptyCart button:hover {
 }
 
 /*Homepage style */
+
+.homepage {
+  padding-bottom: 12rem ;
+}
+
+.homepageLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 .homepage img {
   height: auto;
@@ -114,7 +122,7 @@ header button:hover, .emptyCart button:hover {
 
 .productsContainer {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 30rem));
   grid-template-rows: repeat(3, minmax(200px, 1fr));
   gap: 15px;
   justify-content: center;
@@ -135,6 +143,7 @@ header button:hover, .emptyCart button:hover {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   justify-content: center;
   background-color: #fff;
+  padding: 8px;
 }
 
 .product a {
@@ -143,51 +152,17 @@ header button:hover, .emptyCart button:hover {
   color: #000;
 }
 
-/*Modal */
-
-.bgModal {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
-}
-
-.modalContent {
-  /* width: 500px;
-  height: 300px; */
-  background-color: #fff;
-  position: relative;
-  border-radius: 4px;
-  text-align: center;
-  padding: 20px;
-  display: grid;
-}
-
-.xBtn {
-  position: absolute;
-  top: 0;
-  right: 14px;
-  font-size: 42px;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.xBtn:hover {
-  color: rgb(105, 100, 100);
-}
-
 
 /*Individual product pages 8 */
 .productPage {
   display: grid;
   justify-content: center;
-  background-color: #000;
+  padding: 1rem;
   
+}
+
+.productPage .left {
+  padding: 0.75rem;
 }
 
 .productInfo {
@@ -200,10 +175,28 @@ header button:hover, .emptyCart button:hover {
   grid-column: 1;
 }
 
+.productPage img {
+  height: 40rem;
+  border-radius: 4px;
+}
+
 /*About */
 
 .about {
-  background-image: url(./Assets/aboutImage.jpg);
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutImg {
+  display: flex;
+  align-items: center;
+}
+
+.about img {
+  height: auto;
+  width: 38rem;
 }
 
 .content {
@@ -213,6 +206,8 @@ header button:hover, .emptyCart button:hover {
   justify-content: center;
   flex-flow: column;
   align-items: center;
+  font-size: 1.3rem;
+  padding: 1.5rem;
   flex-grow: 1;
 }
 
@@ -220,6 +215,7 @@ header button:hover, .emptyCart button:hover {
 .contact {
   background-image: url(./Assets/contactUs.webp);
   text-align: center;
+  padding: 0.55rem;
 }
 
 .contact .icons {
@@ -254,6 +250,7 @@ header button:hover, .emptyCart button:hover {
   align-items: center;
   border-top: solid rgb(0 0 0 / 0.1);
   justify-content: space-around;
+  padding: 8px;
 }
 
 .quantity {
@@ -283,7 +280,7 @@ header button:hover, .emptyCart button:hover {
   padding: 8px;
 }
 
-.emptyCart {
+.emptyCart, .completeOrder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +289,7 @@ header button:hover, .emptyCart button:hover {
 
 }
 
-.emptyCart button {
+.emptyCart button, .completeOrder button {
   width: 10rem;
 }
 
@@ -314,15 +311,48 @@ header button:hover, .emptyCart button:hover {
   grid-column: 1;
  }
 
+ .cartSubTotal {
+  display: flex;
+  justify-content: end;
+  padding-right: 5%;
+  padding: 8px;
+  border-top: solid rgb(0 0 0 / 0.1);
+ }
+
  .checkoutRight {
   grid-column: 2;
   display: grid;
   justify-content: center;
   align-items: center;
+
+  max-height: 410px;
  }
 
- .checkoutRight button {
-  background-color: rgb(0, 169, 23);
+ .checkoutRight button, .shopBtn {
+  background-color: rgb(22, 194, 45);
+ }
+
+.checkoutRight button, .completeOrder button {
   width: 10rem;
+  font-weight: 600;
   color: #fff;
+ }
+
+ .summaryInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+ }
+
+ .homeBtn {
+  background-color: rgb(153, 145, 145);
+  height: 3rem;
+ }
+
+ .completeOrder .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin: 8px;
  }
