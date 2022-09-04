@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import products from "../Catalog";
 
 function SunShaders(props) {
-  const { addProduct, removeProduct } = props;
-  console.log(window.location.pathname);
+  const { addProduct } = props;
   return (
     <div className="productPage">
       <div className="productInfo">
