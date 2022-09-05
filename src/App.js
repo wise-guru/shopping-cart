@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.css";
 import Catalog from "./components/Catalog";
 import Navigation from "./components/Navigation";
@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <div className="container">
         <Navigation cartQuantity={totalItems} />
         <RouteSwitch
@@ -53,7 +53,7 @@ function App() {
           totalItems={totalItems}
         />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

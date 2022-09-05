@@ -10,7 +10,7 @@ function Homepage() {
           Check out our catalog for the most pointless innovations you will ever
           have the privilege of viewing.
         </div>
-        <Link to="/shopping-cart/shop">
+        <Link to="/shop">
           <button type="button">Shop Now</button>
         </Link>
         <div />
