@@ -7,7 +7,7 @@ function ShoeUmbrellas(props) {
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <Link to="/shopping-cart/shop">Shop</Link> {">"} {products[3].name}
+          <Link to="/shop">Shop</Link> {">"} {products[3].name}
         </div>
         <div className="left">
           <img src={products[3].image} alt={products[3].name} />

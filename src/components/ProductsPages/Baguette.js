@@ -7,7 +7,7 @@ function Baguette(props) {
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <Link to="/shopping-cart/shop">Shop</Link> {">"} {products[5].name}
+          <Link to="/shop">Shop</Link> {">"} {products[5].name}
         </div>
         <div className="left">
           <img src={products[5].image} alt={products[5].name} />

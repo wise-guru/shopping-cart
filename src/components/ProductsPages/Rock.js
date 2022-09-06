@@ -7,7 +7,7 @@ function Rock(props) {
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <Link to="/shopping-cart/shop">Shop</Link> {">"} {products[8].name}
+          <Link to="/shop">Shop</Link> {">"} {products[8].name}
         </div>
         <div className="left">
           <img src={products[8].image} alt={products[8].name} />

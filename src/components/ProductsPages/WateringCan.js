@@ -7,7 +7,7 @@ function WateringCan(props) {
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <Link to="/shopping-cart/shop">Shop</Link> {">"} {products[6].name}
+          <Link to="/shop">Shop</Link> {">"} {products[6].name}
         </div>
         <div className="left">
           <img src={products[6].image} alt={products[6].name} />

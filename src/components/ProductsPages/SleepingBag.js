@@ -7,7 +7,7 @@ function SleepingBag(props) {
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <Link to="/shopping-cart/shop">Shop</Link> {">"} {products[4].name}
+          <Link to="/shop">Shop</Link> {">"} {products[4].name}
         </div>
         <div className="left">
           <img src={products[4].image} alt={products[4].name} />

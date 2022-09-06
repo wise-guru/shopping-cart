@@ -7,7 +7,7 @@ function Airstick(props) {
     <div className="productPage">
       <div className="productInfo">
         <div className="left">
-          <Link to="/shopping-cart/shop">Shop</Link> {">"} {products[7].name}
+          <Link to="/shop">Shop</Link> {">"} {products[7].name}
         </div>
         <div className="left">
           <img src={products[7].image} alt={products[7].name} />
