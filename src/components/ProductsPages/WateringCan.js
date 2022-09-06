@@ -16,7 +16,7 @@ function WateringCan(props) {
           <h1 className="name">{products[6].name}</h1>
           <div className="price">${products[6].price}</div>
           <p className="description">
-            this watering can is deliberately annoying and even useless in an
+            This watering can is deliberately annoying and even useless in an
             effort to water itself. You may use it to annoy an imaginary
             miniature gardener, or place it in your office to make you remember
             the importance of good design.
