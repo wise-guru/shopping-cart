@@ -17,9 +17,9 @@ function SleepingBag(props) {
           <div className="price">${products[4].price}</div>
           <p className="description">
             Whether you’re gearing up for a weekend outdoors, on the road, or on
-            the couch, you need the Selk’bag wearable sleeping bag. It keeps you
-            warm and cozy and comes with features like cargo pockets, elastic
-            hand enclosures, and removable boots.
+            the couch, you need the wearable sleeping bag! It keeps you warm and
+            cozy and comes with features like cargo pockets, elastic hand
+            enclosures, and removable boots.
           </p>
           <button type="button" onClick={() => addProduct(products[4])}>
             Add to cart
