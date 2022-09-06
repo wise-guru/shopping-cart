@@ -4,7 +4,7 @@ function Shop(props) {
   const { addProduct, products } = props;
   return (
     <main>
-      <h1>Products</h1>
+      <h1 className="pTitle">Products</h1>
       <div className="productsContainer">
         {products.map((product) => {
           return (
