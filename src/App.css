@@ -293,6 +293,10 @@ header button:hover, .emptyCart button:hover {
   width: 10rem;
 }
 
+.pTitle, .checkoutTitle {
+  text-align: center;
+}
+
 /*Checkout */
  .checkout {
   display: grid;
