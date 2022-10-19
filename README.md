@@ -13,3 +13,6 @@ Live Link: https://wise-guru.github.io/shopping-cart/
 1. Users can go through a simulated online shopping experience.
 2. Each product in the shop links to its own product page with an image, description and the "add to cart option"
 3. Heavily leverages the use of React Router and passing down props.
+4. React functional components and object oriented programming are utilized throughout this application.
+5. The Shopping cart in the navagation menu dynamically updates and displays the quantity of items added to the shopping cart.
+6. The Checkout component renders a summary of the items in the cart, the total cost, and functionality to remove items and/or the edit the quantity.
