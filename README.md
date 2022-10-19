@@ -6,7 +6,7 @@ Live Link: https://wise-guru.github.io/shopping-cart/
 
 ## Technologies Used
 
-![HTML5](https://github.com/wise-guru/portfolio/blob/main/src/assets/skills/html.svg)(https://en.wikipedia.org/wiki/HTML)
+[![HTML5](https://github.com/wise-guru/portfolio/blob/main/src/assets/skills/html.svg)](https://en.wikipedia.org/wiki/HTML)
 
 ## App Features
 
