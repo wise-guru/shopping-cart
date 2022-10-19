@@ -8,6 +8,12 @@ Live Link: https://wise-guru.github.io/shopping-cart/
 
 [![HTML5](https://github.com/wise-guru/portfolio/blob/main/src/assets/skills/html.svg)](https://en.wikipedia.org/wiki/HTML)
 
+[![CSS3](https://github.com/wise-guru/portfolio/blob/main/src/assets/skills/css.svg)](https://en.wikipedia.org/wiki/CSS)
+
+[![Javascript](https://github.com/wise-guru/portfolio/blob/main/src/assets/skills/javascript.svg)](https://en.wikipedia.org/wiki/JavaScript)
+
+[![ReactJS](https://github.com/wise-guru/portfolio/blob/main/src/assets/skills/react.svg)](<https://en.wikipedia.org/wiki/React_(JavaScript_library)>)
+
 ## App Features
 
 1. Users can go through a simulated online shopping experience.
