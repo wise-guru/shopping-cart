@@ -27,7 +27,7 @@ function Rock(props) {
           <p>
             Here&apos;s why you need a USB Pet Rock now: They make a great gift
             for everyone we can think of. They don&apos;t need food or water.
-            They don&apos;5t chew on your stuff. They will make you instantly
+            They don&apos;t chew on your stuff. They will make you instantly
             cool. They never talk back to you. They will forever love you in
             their own rocky way. They are the greenest USB products ever
             created, as they draw absolutely no electricity.

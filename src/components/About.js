@@ -10,7 +10,7 @@ function About() {
           seem to be more inconvenient than the problems they solve.{" "}
         </p>
         <p>
-          Since the dawn of time, we hae worked tirelessly to bring these
+          Since the dawn of time, we have worked tirelessly to bring these
           award-winning innovations to the general public. What awards have we
           won, you ask? That&apos;s not relevant.
         </p>
@@ -21,7 +21,7 @@ function About() {
         <p>
           Over the past two years, she has designed and fully prototyped over
           280 new inventions that solve problems that don&apos;t exist. Each
-          week from the Useless Design Studio, Job develops 1-3 brand new fake
+          week from the Useless Design Studio, Job develops 1-3 brand new
           consumer products using diverse production methods from 3D printing,
           sewing, mold making, wood working, laser cutter, and whatever else she
           can get her hands on. Follow along to see what gets built next!
