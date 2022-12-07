@@ -16,7 +16,7 @@ function Checkout(props) {
   const itemCount = totalItems > 1 ? "items" : "item";
 
   return (
-    <main>
+    <main className="checkout-container">
       {cartItems.length > 0 ? (
         <div className="checkout">
           <h1 className="checkoutTitle">Checkout</h1>

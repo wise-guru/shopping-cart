@@ -5,7 +5,7 @@ function Products(props) {
   const { addProduct, product } = props;
   return (
     <div className="product" data-id={product.id}>
-      <Link to={product.route}>
+      <Link to={`/shop/${product.route}`}>
         <img
           className="productImage"
           src={product.image}
@@ -20,9 +20,11 @@ function Products(props) {
           ${product.price}
         </div>
       </Link>
-      <button type="button" onClick={() => addProduct(product)}>
-        Add to cart
-      </button>
+      <div className="button-container">
+        <button type="button" onClick={() => addProduct(product)}>
+          Add to cart
+        </button>
+      </div>
     </div>
   );
 }

@@ -3,17 +3,18 @@ import Homepage from "./Homepage";
 import Shop from "./Shop";
 import About from "./About";
 import Contact from "./Contact";
-import SunShaders from "./ProductsPages/SunShaders";
-import WateringCan from "./ProductsPages/WateringCan";
-import ShopperStopper from "./ProductsPages/ShopperStopper";
-import ShoeUmbrellas from "./ProductsPages/ShoeUmbrellas";
-import SleepingBag from "./ProductsPages/SleepingBag";
-import Baguette from "./ProductsPages/Baguette";
-import Airstick from "./ProductsPages/Airstick";
-import Rock from "./ProductsPages/Rock";
-import Boots from "./ProductsPages/Boots";
+// import SunShaders from "./ProductsPages/SunShaders";
+// import WateringCan from "./ProductsPages/WateringCan";
+// import ShopperStopper from "./ProductsPages/ShopperStopper";
+// import ShoeUmbrellas from "./ProductsPages/ShoeUmbrellas";
+// import SleepingBag from "./ProductsPages/SleepingBag";
+// import Baguette from "./ProductsPages/Baguette";
+// import Airstick from "./ProductsPages/Airstick";
+// import Rock from "./ProductsPages/Rock";
+// import Boots from "./ProductsPages/Boots";
 import Checkout from "./Checkout";
 import CompleteOrder from "./CompleteOrder";
+import ProductPage from "./ProductPage";
 
 function RouteSwitch(props) {
   const {
@@ -21,7 +22,7 @@ function RouteSwitch(props) {
     products,
     addProduct,
     removeProduct,
-    item,
+    // item,
     totalItems,
     setCartItems,
     // resetCart,
@@ -30,7 +31,7 @@ function RouteSwitch(props) {
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/about" element={<About />} />
-      <Route
+      {/* <Route
         path="/shop/sun-shaders"
         element={
           <SunShaders
@@ -39,15 +40,19 @@ function RouteSwitch(props) {
             item={item}
           />
         }
-      />
+      /> */}
       <Route
+        path="/shop/:route"
+        element={<ProductPage addProduct={addProduct} />}
+      />
+      {/* <Route
         path="/shop/uncomfortable-rain-boots"
         element={
           <Boots addProduct={addProduct} removeProduct={removeProduct} />
         }
-      />
+      /> */}
 
-      <Route
+      {/* <Route
         path="/shop/shopper-stopper"
         element={
           <ShopperStopper
@@ -92,10 +97,10 @@ function RouteSwitch(props) {
       <Route
         path="/shop/usb-pet-rock"
         element={<Rock addProduct={addProduct} removeProduct={removeProduct} />}
-      />
+      /> */}
       <Route
         exact
-        path="/shop/"
+        path="/shop"
         element={<Shop addProduct={addProduct} products={products} />}
       />
       <Route path="/contact" element={<Contact />} />

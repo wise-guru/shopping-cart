@@ -10,13 +10,16 @@ function Homepage() {
           Check out our catalog for the most pointless innovations you will ever
           have the privilege of viewing.
         </div>
-        <Link to="/shop">
-          <button type="button">Shop Now</button>
-        </Link>
+
+        <div className="button-container">
+          <Link to="/shop">
+            <button type="button">Shop Now</button>
+          </Link>
+        </div>
         <div />
       </div>
 
-      <div>
+      <div className="image-box">
         <img src={Hoodie} alt="Privacy Hoodie" />
       </div>
     </main>

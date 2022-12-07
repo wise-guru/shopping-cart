@@ -7,7 +7,7 @@ function CartItem(props) {
     <div>
       {item ? (
         <div className="cartItem">
-          <Link to={props.route}>
+          <Link to={`/shop/${props.route}`}>
             <div className="image-box">
               <img src={props.image} alt={props.name} />
             </div>

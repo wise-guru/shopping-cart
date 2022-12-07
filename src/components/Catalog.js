@@ -30,9 +30,7 @@ const Catalog = [
     route: "uncomfortable-rain-boots",
     price: 18.99,
     inCart: 0,
-    description: `Ever been unable to decide whether to wear rain boots or sandals?
-    With the Uncomfortable Rain Boots, you can have both! You'll be
-    equipped for rain <em>and</em> shine.`,
+    description: `Ever been unable to decide whether to wear rain boots or sandals? With the Uncomfortable Rain Boots, you can have both! You'll be equipped for rain AND shine.`,
   },
   {
     name: "Shopper Stopper",
@@ -41,12 +39,7 @@ const Catalog = [
     route: "shopper-stopper",
     price: 9.99,
     inCart: 0,
-    description: `Stop accidentally clicking the Instagram Shop tab. With recent
-    layout changes, users around the world are clicking on tabs they
-    have no desire to use. Our newest phone slider will ensure you never
-    tap the Shop or Reels tab on @Instagram when looking for your
-    notifications. The Instagram experience you know and love has
-    finally returned.`,
+    description: `Stop accidentally clicking the Instagram Shop tab. With recent layout changes, users around the world are clicking on tabs they have no desire to use. Our newest phone slider will ensure you never tap the Shop or Reels tab on @Instagram when looking for your notifications. The Instagram experience you know and love has finally returned.`,
   },
   {
     name: "Shoe Umbrella",
@@ -55,9 +48,7 @@ const Catalog = [
     route: "shoe-umbrella",
     price: 21.99,
     inCart: 0,
-    description: `No matter how big the umbrella, do your feet still get wet uner a
-    torrential downfall? These umbrella shoes are a unique solution to
-    this ongoing problem.
+    description: `No matter how big the umbrella, do your feet still get wet uner a torrential downfall? These umbrella shoes are a unique solution to this ongoing problem.
 
     Now, you can wear suede heels in rainy weather too!
     `,
@@ -69,10 +60,7 @@ const Catalog = [
     route: "walking-sleeping-bag",
     price: 24.99,
     inCart: 0,
-    description: `Whether you're gearing up for a weekend outdoors, on the road, or on
-    the couch, you need the wearable sleeping bag! It keeps you warm and
-    cozy and comes with features like cargo pockets, elastic hand
-    enclosures, and removable boots.`,
+    description: `Whether you're gearing up for a weekend outdoors, on the road, or on the couch, you need the wearable sleeping bag! It keeps you warm and cozy and comes with features like cargo pockets, elastic hand enclosures, and removable boots.`,
   },
 
   {
@@ -82,11 +70,7 @@ const Catalog = [
     route: "the-baguette-pack",
     price: 9.99,
     inCart: 0,
-    description: `FINALLY a backpack specially designed for your delicious baguette.
-    Hit your local bakery and pick up some steaming hot freshly baked
-    bread knowing you will keep it safe, protected, and dry all the way
-    home. Slide this French delicacy into our ergonomically designed
-    pouch and cinch it up to be on your way in no time!`,
+    description: `FINALLY a backpack specially designed for your delicious baguette. Hit your local bakery and pick up some steaming hot freshly baked bread knowing you will keep it safe, protected, and dry all the way home. Slide this French delicacy into our ergonomically designed pouch and cinch it up to be on your way in no time!`,
   },
   {
     name: "Eternally Single Bed",
@@ -104,10 +88,7 @@ const Catalog = [
     route: "airstick",
     price: 11.99,
     inCart: 0,
-    description: `Forever losing your Apple Airpods? Or simply worried that you might
-    misplace them? Also a fiend for oriental food and wolfing down a
-    good meal with some chopsticks? Then the Airsticks might be the
-    perfect solution for you.
+    description: `Forever losing your Apple Airpods? Or simply worried that you might misplace them? Also a fiend for oriental food and wolfing down a good meal with some chopsticks? Then the Airsticks might be the perfect solution for you.
 
     The perfect accessory for your Apple AirPods. Enjoy your favourite sushi on the go and never leave your chopsticks behind.
     `,
@@ -119,8 +100,7 @@ const Catalog = [
     route: "usb-pet-rock",
     price: 8.99,
     inCart: 0,
-    description: `Simply plug the USB cable into a free port and let the fun begin. The USB Pet Rock will instantly begin to work its magic. People will stop by and ask you what your USB Pet Rock does. Each time, you can make up a new story; for no matter what you say, it will be greater than the truth - because these USB Pet Rocks don't do a dang thing! Except make you smile. And confuse your friends and
-    coworkers, which will make you smile even more.
+    description: `Simply plug the USB cable into a free port and let the fun begin. The USB Pet Rock will instantly begin to work its magic. People will stop by and ask you what your USB Pet Rock does. Each time, you can make up a new story; for no matter what you say, it will be greater than the truth - because these USB Pet Rocks don't do a dang thing! Except make you smile. And confuse your friends and coworkers, which will make you smile even more.
 
     Here's why you need a USB Pet Rock now: They make a great gift for everyone we can think of. They don't need food or water. They don't chew on your stuff. They will make you instantly cool. They never talk back to you. They will forever love you in their own rocky way. They are the greenest USB products ever created, as they draw absolutely no electricity.
     `,
@@ -133,6 +113,7 @@ const Catalog = [
     price: 19.99,
     inCart: 0,
     description: `Ever sat on a crowded airplane or bus with your laptop open, craving a little privacy as you typed an email or watched a terrible movie? This hoddie is the solution for exactly that dilemma, and it's a bit more, shall we say, enveloping than one of those privacy filters you slide over your screen.
+    
     Designed for technology fans everywhere, the privacy hoodie provides you with a private environment for your computer, cell phone or even gaming console. Yeah this doesn't look conspicuous at all.`,
   },
   {

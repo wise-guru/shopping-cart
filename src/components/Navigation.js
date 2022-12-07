@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CartImage from "../Assets/cart.png";
 
 function Navigation(props) {
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+  const toggleClass = () => {
+    setIsMenuActive(!isMenuActive);
+  };
   const { cartQuantity } = props;
   return (
     <header>
-      <div>
-        <Link to="/">Useless Inventions</Link>
+      <div className="header-left">
+        <div className="menu-button-container">
+          <button
+            type="button"
+            className="toggle-button toggle"
+            onClick={toggleClass}
+          >
+            <span className="bar" />
+            <span className="bar" />
+            <span className="bar" />
+          </button>
+        </div>
+        <Link to="/" className="header-title">
+          <h2>Useless Inventions</h2>
+        </Link>
       </div>
-      <nav>
+
+      <nav className={`navbar-links ${isMenuActive ? "active" : null}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -25,14 +44,16 @@ function Navigation(props) {
               <button type="button">Contact Us</button>
             </Link>
           </li>
-          <li>
-            <Link to="/checkout" className="navCart">
-              <img src={CartImage} alt="shopping cart icon" />
-              <div>{cartQuantity}</div>
-            </Link>
-          </li>
         </ul>
       </nav>
+      {/* <div className="cartUl"> */}
+      <div className="navCartContainer">
+        <Link to="/checkout" className="navCart">
+          <img src={CartImage} alt="shopping cart icon" />
+          <div>{cartQuantity}</div>
+        </Link>
+      </div>
+      {/* </ul> */}
     </header>
   );
 }
