@@ -545,10 +545,6 @@ body {
       
     }
 
-    .productsContainer button {
-      /* height: 33px; */
-    }
-
     .product {
       align-items: space-between;
     }
@@ -592,7 +588,6 @@ body {
   
     .productsContainer {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      /* grid-template-rows: auto; */
       grid-auto-rows: 1fr;
     }
   
@@ -606,10 +601,6 @@ body {
       height: auto;
       width: 15rem;
     }
-  
-    /* main {
-      display: grid;
-    } */
   
     .checkout {
       grid-template-columns: 1fr;
