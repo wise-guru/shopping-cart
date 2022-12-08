@@ -8,7 +8,7 @@ function Products(props) {
       <Link to={`/shop/${product.route}`}>
         <img
           className="productImage"
-          src={product.image}
+          src={product.images[0]}
           alt={product.name}
           data-id={product.id}
         />

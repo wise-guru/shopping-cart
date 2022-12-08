@@ -12,7 +12,6 @@ function ProductPage(props) {
 
   useEffect(() => {
     const productInfo = Catalog.find((item) => item.route === route);
-    console.log(productInfo);
     setProduct(productInfo);
   });
   return (
@@ -23,7 +22,7 @@ function ProductPage(props) {
             <Link to="/shop">Shop</Link> {">"} {product.name}
           </div>
           <div className="left image">
-            <img src={product.image} alt={product.name} />
+            <img src={product.images[0]} alt={product.name} />
           </div>
           <div className="right">
             <h1 className="name">{product.name}</h1>

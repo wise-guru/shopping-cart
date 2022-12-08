@@ -1,20 +1,55 @@
-import Shades from "../Assets/products/shades.webp";
-import Boots from "../Assets/products/boots.jpg";
-import Stopper from "../Assets/products/stopper.webp";
-import Umbrella from "../Assets/products/shoeumbrellas.png";
-import Rock from "../Assets/products/rock.jpeg";
-import WateringCan from "../Assets/products/wateringCan.jpg";
-import Baguette from "../Assets/products/baguette.webp";
-import SleepingBag from "../Assets/products/sleepingBag.jpg";
-import Airstick from "../Assets/products/airstick.webp";
-import PrivacyHood from "../Assets/products/privacyHood.jpg";
-import NoodleFan from "../Assets/products/noodleFan.jpg";
-import Bed from "../Assets/products/bed.jpg";
+import Shades from "../Assets/products/sunShaders/shades.webp";
+import Shades2 from "../Assets/products/sunShaders/sunShaders-two.jpg";
+import Shades3 from "../Assets/products/sunShaders/sunShaders-three.jpg";
+
+import Boots from "../Assets/products/rainBoots/boots.jpg";
+import Boots2 from "../Assets/products/rainBoots/boots-two.jpeg";
+
+import Stopper from "../Assets/products/shopperStopper/stopper.webp";
+import Stopper2 from "../Assets/products/shopperStopper/stopper-two.jpg";
+import Stopper3 from "../Assets/products/shopperStopper/stopper-three.jpg";
+
+import Umbrella from "../Assets/products/shoeUmbrellas/shoeumbrellas.png";
+import Umbrella2 from "../Assets/products/shoeUmbrellas/shoeumbrellas-two.png";
+import Umbrella3 from "../Assets/products/shoeUmbrellas/shoeumbrellas-three.jpg";
+
+import Rock from "../Assets/products/rock/rock.jpeg";
+import Rock2 from "../Assets/products/rock/rock-two.jpeg";
+import Rock3 from "../Assets/products/rock/rock-three.jpg";
+
+import WateringCan from "../Assets/products/wateringCan/wateringCan.jpg";
+import WateringCan2 from "../Assets/products/wateringCan/wateringCan-two.jpg";
+import WateringCan3 from "../Assets/products/wateringCan/wateringCan-three.webp";
+
+import Baguette from "../Assets/products/baguette/baguette.webp";
+import Baguette2 from "../Assets/products/baguette/baguette-two.jpg";
+import Baguette3 from "../Assets/products/baguette/baguette-three.jpg";
+
+import SleepingBag from "../Assets/products/sleepingBag/sleepingBag.jpg";
+import SleepingBag2 from "../Assets/products/sleepingBag/sleepingBag-two.jpg";
+import SleepingBag3 from "../Assets/products/sleepingBag/sleepingBag-three.jpeg";
+
+import Airstick from "../Assets/products/airstick/airstick.webp";
+import Airstick2 from "../Assets/products/airstick/airstick-two.jpeg";
+import Airstick3 from "../Assets/products/airstick/airstick-three.jpeg";
+
+import PrivacyHood from "../Assets/products/hoodie/privacyHood.jpg";
+import PrivacyHood2 from "../Assets/products/hoodie/hoodie-two.webp";
+import PrivacyHood3 from "../Assets/products/hoodie/hoodie-three.jpg";
+
+import NoodleFan from "../Assets/products/noodleFan/noodleFan.jpg";
+import NoodleFan2 from "../Assets/products/noodleFan/noodleFan-two.png";
+import NoodleFan3 from "../Assets/products/noodleFan/noodleFan-three.webp";
+
+import Bed from "../Assets/products/bed/bed.jpg";
+import Bed2 from "../Assets/products/bed/bed-two.jpg";
 
 const Catalog = [
   {
     name: "SunShaders",
-    image: Shades,
+    images: [Shades, Shades2, Shades3],
+    // secondimages:Shades2,
+    // thirdimages: Shades3
     id: 0,
     route: "sun-shaders",
     price: 12.99,
@@ -25,7 +60,7 @@ const Catalog = [
   },
   {
     name: "Uncomfortable Rain Boots",
-    image: Boots,
+    images: [Boots, Boots2],
     id: 1,
     route: "uncomfortable-rain-boots",
     price: 18.99,
@@ -34,7 +69,7 @@ const Catalog = [
   },
   {
     name: "Shopper Stopper",
-    image: Stopper,
+    images: [Stopper, Stopper2, Stopper3],
     id: 2,
     route: "shopper-stopper",
     price: 9.99,
@@ -43,7 +78,7 @@ const Catalog = [
   },
   {
     name: "Shoe Umbrella",
-    image: Umbrella,
+    images: [Umbrella, Umbrella2, Umbrella3],
     id: 3,
     route: "shoe-umbrella",
     price: 21.99,
@@ -55,7 +90,7 @@ const Catalog = [
   },
   {
     name: "Walking Sleeping Bag",
-    image: SleepingBag,
+    images: [SleepingBag, SleepingBag2, SleepingBag3],
     id: 4,
     route: "walking-sleeping-bag",
     price: 24.99,
@@ -65,7 +100,7 @@ const Catalog = [
 
   {
     name: "The Baguette Pack",
-    image: Baguette,
+    images: [Baguette, Baguette2, Baguette3],
     id: 5,
     route: "the-baguette-pack",
     price: 9.99,
@@ -74,7 +109,7 @@ const Catalog = [
   },
   {
     name: "Eternally Single Bed",
-    image: Bed,
+    images: [Bed, Bed2],
     id: 6,
     route: "eternally-single-bed",
     price: 254.99,
@@ -83,7 +118,7 @@ const Catalog = [
   },
   {
     name: "Airstick",
-    image: Airstick,
+    images: [Airstick, Airstick2, Airstick3],
     id: 7,
     route: "airstick",
     price: 11.99,
@@ -95,7 +130,7 @@ const Catalog = [
   },
   {
     name: "USB Pet Rock",
-    image: Rock,
+    images: [Rock, Rock2, Rock3],
     id: 8,
     route: "usb-pet-rock",
     price: 8.99,
@@ -107,7 +142,7 @@ const Catalog = [
   },
   {
     name: "Privacy Hood",
-    image: PrivacyHood,
+    images: [PrivacyHood, PrivacyHood2, PrivacyHood3],
     id: 9,
     route: "privacy-hood",
     price: 19.99,
@@ -118,7 +153,7 @@ const Catalog = [
   },
   {
     name: "Noodle Fan",
-    image: NoodleFan,
+    images: [NoodleFan, NoodleFan2, NoodleFan3],
     id: 10,
     route: "noodle-fan",
     price: 12.78,
@@ -129,7 +164,7 @@ const Catalog = [
   },
   {
     name: "Watering Can ",
-    image: WateringCan,
+    images: [WateringCan, WateringCan2, WateringCan3],
     id: 11,
     route: "watering-can",
     price: 13.49,
