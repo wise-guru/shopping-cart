@@ -183,13 +183,17 @@ body {
     font-weight: 500;
   }
 
+  .productsContainer button, .productPage .right button {
+    transition: 0s;
+  }
+
   .productsContainer .product button:hover, .productPage .right button:hover {
     background-color: rgb(1, 155, 194);
   }
 
   .productsContainer .product button:active, .productPage .right button:active {
     background-color: rgb(3, 135, 168);
-    transform: scale(0.95);
+    transform: scale(0.975);
   }
   
   
@@ -666,3 +670,4 @@ body {
       width: 5rem;
     }
    }
+
