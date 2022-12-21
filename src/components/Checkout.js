@@ -27,7 +27,7 @@ function Checkout(props) {
                   key={product.id}
                   name={product.name}
                   price={product.price}
-                  image={product.image}
+                  image={product.images[0]}
                   route={product.route}
                   removeProduct={removeProduct}
                   addProduct={addProduct}
@@ -57,7 +57,7 @@ function Checkout(props) {
                 Total: <strong>${totalPrice}</strong>
               </div>
             </div>
-            <Link to="/order-complete">
+            <Link to="/order-complete" className="order-button-container">
               <button
                 type="button"
                 onClick={() => {
