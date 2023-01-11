@@ -260,7 +260,8 @@ body {
   }
   
   .about img {
-    width: 100%;
+    width: 50%;
+    border-radius: 8px;
   }
   
   .content {
@@ -574,9 +575,7 @@ body {
       justify-content: center;
     }
   
-    .about img {
-      width: 90%;
-    }
+    
   
   
   
@@ -660,6 +659,10 @@ body {
     .homepageLeft .button-container {
       display: flex;
       justify-content: center;
+    }
+
+    .about img {
+      width: 90%;
     }
 
     .contact .content {
