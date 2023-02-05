@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.f833c7cf.css",
-    "main.js": "/shopping-cart/static/js/main.78881c85.js",
+    "main.css": "/shopping-cart/static/css/main.5d995b01.css",
+    "main.js": "/shopping-cart/static/js/main.0776ac18.js",
     "static/media/noodleFan-two.png": "/shopping-cart/static/media/noodleFan-two.9080a17f434ac4016dac.png",
     "static/media/sunShaders-three.jpg": "/shopping-cart/static/media/sunShaders-three.362b7e376adcb757b72e.jpg",
+    "static/media/noodleFan-one.png": "/shopping-cart/static/media/noodleFan-one.12debdaca7257e2b6a3c.png",
     "static/media/shoeumbrellas-two.png": "/shopping-cart/static/media/shoeumbrellas-two.85cfaf05c707b3f3311d.png",
     "static/media/hoodie.jpg": "/shopping-cart/static/media/hoodie.67066e37839389a0b49e.jpg",
     "static/media/privacyHood.jpg": "/shopping-cart/static/media/privacyHood.67066e37839389a0b49e.jpg",
-    "static/media/shoeumbrellas.png": "/shopping-cart/static/media/shoeumbrellas.87d70c875faa77a0d5e8.png",
+    "static/media/airstick-two.jpg": "/shopping-cart/static/media/airstick-two.7e713df42f2723df0ff8.jpg",
     "static/media/shoeumbrellas-three.jpg": "/shopping-cart/static/media/shoeumbrellas-three.3058c7c5b71f352120f1.jpg",
     "static/media/rock-three.jpg": "/shopping-cart/static/media/rock-three.0e7285df4eb431ea278b.jpg",
     "static/media/contactUs.webp": "/shopping-cart/static/media/contactUs.9b082e42beea1dbc60d5.webp",
-    "static/media/wateringCan-three.webp": "/shopping-cart/static/media/wateringCan-three.bab1d95cc43f105f1368.webp",
-    "static/media/noodleFan.jpg": "/shopping-cart/static/media/noodleFan.d6ac9f04dd2205ea0ce4.jpg",
-    "static/media/sleepingBag-two.jpg": "/shopping-cart/static/media/sleepingBag-two.28d83da83c608c525a1b.jpg",
+    "static/media/sleepingBag-three.webp": "/shopping-cart/static/media/sleepingBag-three.e90d67d88c74075199ee.webp",
+    "static/media/airstick-three.jpg": "/shopping-cart/static/media/airstick-three.3e9a5a09b1bc3c07e92a.jpg",
     "static/media/baguette.webp": "/shopping-cart/static/media/baguette.fc095475f5ce1d86c8c6.webp",
     "static/media/sunShaders-two.jpg": "/shopping-cart/static/media/sunShaders-two.d06557eefa9c475f2e09.jpg",
     "static/media/boots-two.jpeg": "/shopping-cart/static/media/boots-two.4a675c187e4d12e8a7bc.jpeg",
@@ -21,6 +21,7 @@
     "static/media/shades.webp": "/shopping-cart/static/media/shades.4642d15e7e04c6e49679.webp",
     "static/media/hoodie-three.jpg": "/shopping-cart/static/media/hoodie-three.b030b74bea5e9fb3db6c.jpg",
     "static/media/bed.jpg": "/shopping-cart/static/media/bed.ddb943e9ea29a5a76c2a.jpg",
+    "static/media/sleepingBag-two.jpg": "/shopping-cart/static/media/sleepingBag-two.77714ea4a95fc49ae793.jpg",
     "static/media/airstick.webp": "/shopping-cart/static/media/airstick.fc6f37ef4c24538c1800.webp",
     "static/media/noodleFan-three.webp": "/shopping-cart/static/media/noodleFan-three.f01b8647e7c533e28f99.webp",
     "static/media/baguette-three.jpg": "/shopping-cart/static/media/baguette-three.871423cc91587730c826.jpg",
@@ -32,7 +33,6 @@
     "static/media/wateringCan-two.jpg": "/shopping-cart/static/media/wateringCan-two.366b0db5bb5b5cc4f9c4.jpg",
     "static/media/rock-two.jpeg": "/shopping-cart/static/media/rock-two.64d91c6f270157906028.jpeg",
     "static/media/hoodie-two.webp": "/shopping-cart/static/media/hoodie-two.3a503e5154aed24a8d85.webp",
-    "static/media/bed-two.jpg": "/shopping-cart/static/media/bed-two.24bec93d2e2452e4854a.jpg",
     "static/media/wateringCan.jpg": "/shopping-cart/static/media/wateringCan.7b1cc916637201d5df81.jpg",
     "static/media/boots.jpg": "/shopping-cart/static/media/boots.a3d2c44beb7012c5f0aa.jpg",
     "static/media/sleepingBag.jpg": "/shopping-cart/static/media/sleepingBag.6e773e57ebbe00b85d87.jpg",
@@ -40,11 +40,11 @@
     "index.html": "/shopping-cart/index.html",
     "static/media/twitter.svg": "/shopping-cart/static/media/twitter.8f94fa9925914dd344a27712e98c92b2.svg",
     "static/media/email.svg": "/shopping-cart/static/media/email.99f1d0880fde177c0b9468296c907d16.svg",
-    "main.f833c7cf.css.map": "/shopping-cart/static/css/main.f833c7cf.css.map",
-    "main.78881c85.js.map": "/shopping-cart/static/js/main.78881c85.js.map"
+    "main.5d995b01.css.map": "/shopping-cart/static/css/main.5d995b01.css.map",
+    "main.0776ac18.js.map": "/shopping-cart/static/js/main.0776ac18.js.map"
   },
   "entrypoints": [
-    "static/css/main.f833c7cf.css",
-    "static/js/main.78881c85.js"
+    "static/css/main.5d995b01.css",
+    "static/js/main.0776ac18.js"
   ]
 }
