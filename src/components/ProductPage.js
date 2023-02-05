@@ -6,9 +6,10 @@ import Catalog from "./Catalog";
 function ProductPage(props) {
   const { addProduct } = props;
   const [product, setProduct] = useState();
-
   const { route } = useParams();
-  //   console.log(route);
+
+  const [selectedImage, setSelectedImage] = useState(0);
+  const [selectChecked, setSelectChecked] = useState();
 
   useEffect(() => {
     const productInfo = Catalog.find((item) => item.route === route);
@@ -21,8 +22,61 @@ function ProductPage(props) {
           <div className="left">
             <Link to="/shop">Shop</Link> {">"} {product.name}
           </div>
-          <div className="left image">
-            <img src={product.images[0]} alt={product.name} />
+          <div className="left product-image-box">
+            <div>
+              <ul className="image-list">
+                {product.images.map((image, index) => {
+                  const handleCheckedInput = (e) => {
+                    setSelectChecked(index);
+                    setSelectedImage(e.target.value);
+                  };
+
+                  const handleCheckedImage = (e) => {
+                    setSelectChecked(index);
+                    setSelectedImage(e.target.name);
+                  };
+                  return (
+                    <li className="image-hover" key={image}>
+                      <label htmlFor={`image-${index}`} value={index}>
+                        <input
+                          type="radio"
+                          name="image"
+                          value={index}
+                          id={`image-${index}`}
+                          checked={selectChecked === index}
+                          onMouseOver={(e) => {
+                            handleCheckedInput(e);
+                          }}
+                          onChange={(e) => {
+                            handleCheckedInput(e);
+                          }}
+                          onFocus={(e) => {
+                            handleCheckedInput(e);
+                          }}
+                        />
+
+                        <img
+                          src={image}
+                          alt="Product"
+                          name={index}
+                          onMouseOver={(e) => {
+                            handleCheckedImage(e);
+                          }}
+                          onFocus={(e) => {
+                            handleCheckedImage(e);
+                          }}
+                        />
+                      </label>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <img
+              className="image-main"
+              src={product.images[selectedImage]}
+              alt={product.name}
+            />
           </div>
           <div className="right">
             <h1 className="name">{product.name}</h1>
